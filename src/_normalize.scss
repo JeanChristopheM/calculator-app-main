@@ -1,8 +1,28 @@
-*, h1, p {
+:root {
+    font-size: 16px;
+}
+*, h1, p, label {
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
 }
 a, a:visited {
     color:inherit;
     text-decoration: none;
+}
+label {
+    font-size: .5rem;
+}
+h1 {
+    font-size: 1.5rem;
+}
+.main {
+    font-size: 2rem;
+    &__keypad {
+        &-key {
+            font-size: 2rem;
+        }
+        .reset, .equal, .del {
+            font-size: 1rem;
+        }
+    }
 }
