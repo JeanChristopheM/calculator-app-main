@@ -1,0 +1,75 @@
+.theme1 {
+    background-color: $bg1_main;
+    color: $text1_light;
+    .main {
+        &__screen {
+            background-color: $bg1_screen;
+            color: $text1_light;
+        }
+        &__keypad {
+            background-color: $bg1_keypad;
+            .small {
+                background-color: $keys1_default;
+                color: $text1_dark;
+            }
+            .del, .reset {
+                background-color: $keys1_reset;
+                color: $text1_light;
+            }
+            .equal {
+                background-color: $keys1_equal;
+                color: $text1_light;
+            }
+        }
+    }
+}
+.theme2 {
+    background-color: $bg2_main;
+    color: $text2_dark;
+    .main {
+        &__screen {
+            background-color: $bg2_screen;
+            color: $text2_dark;
+        }
+        &__keypad {
+            background-color: $bg2_keypad;
+            .small {
+                background-color: $keys2_default;
+                color: $text2_dark;
+            }
+            .del, .reset {
+                background-color: $keys2_reset;
+                color: $text2_light;
+            }
+            .equal {
+                background-color: $keys2_equal;
+                color: $text2_light;
+            }
+        }
+    }
+}
+.theme3 {
+    background-color: $bg3_main;
+    color: $text3_yellow;
+    .main {
+        &__screen {
+            background-color: $bg3_screen;
+            color: $text3_yellow;
+        }
+        &__keypad {
+            background-color: $bg3_keypad;
+            .small {
+                background-color: $keys3_default;
+                color: $text3_yellow;
+            }
+            .del, .reset {
+                background-color: $keys3_reset;
+                color: $text3_light;
+            }
+            .equal {
+                background-color: $keys3_equal;
+                color: $text3_dark;
+            }
+        }
+    }
+}
