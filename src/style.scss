@@ -18,6 +18,13 @@ body {
 .header {
     display:flex;
     justify-content: space-between;
+    &__themePicker {
+        width: 35%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        @import 'range';
+    }
 }
 .main {
     &__screen {
