@@ -1,6 +1,10 @@
 .theme1 {
     background-color: $bg1_main;
     color: $text1_light;
+    .calc {
+        border-top: 2px solid $bg1_screen;
+        box-shadow: 0px 3px 0px 3px $bg1_screen;
+    }
     .main {
         &__screen {
             background-color: $bg1_screen;
@@ -8,17 +12,20 @@
         }
         &__keypad {
             background-color: $bg1_keypad;
-            .small {
+            &-key {
                 background-color: $keys1_default;
                 color: $text1_dark;
+                box-shadow: 0px 3px 0px $keys1_defaultShadow;
             }
             .del, .reset {
                 background-color: $keys1_reset;
                 color: $text1_light;
+                box-shadow: 0px 3px 0px $keys1_resetShadow;
             }
             .equal {
                 background-color: $keys1_equal;
                 color: $text1_light;
+                box-shadow: 0px 3px 0px $keys1_equalShadow;
             }
         }
     }
@@ -26,6 +33,10 @@
 .theme2 {
     background-color: $bg2_main;
     color: $text2_dark;
+    .calc {
+        border-top: 2px solid $keys2_resetShadow;
+        box-shadow: 0px 3px 0px 3px $keys2_resetShadow;
+    }
     .main {
         &__screen {
             background-color: $bg2_screen;
@@ -33,17 +44,20 @@
         }
         &__keypad {
             background-color: $bg2_keypad;
-            .small {
+            &-key {
                 background-color: $keys2_default;
                 color: $text2_dark;
+                box-shadow: 0px 3px 0px $keys2_defaultShadow;
             }
             .del, .reset {
                 background-color: $keys2_reset;
                 color: $text2_light;
+                box-shadow: 0px 3px 0px $keys2_resetShadow;
             }
             .equal {
                 background-color: $keys2_equal;
                 color: $text2_light;
+                box-shadow: 0px 3px 0px $keys2_equalShadow;
             }
         }
     }
@@ -51,6 +65,10 @@
 .theme3 {
     background-color: $bg3_main;
     color: $text3_yellow;
+    .calc {
+        border-top: 2px solid $keys3_resetShadow;
+        box-shadow: 0px 3px 0px 3px $keys3_resetShadow;
+    }
     .main {
         &__screen {
             background-color: $bg3_screen;
@@ -58,17 +76,20 @@
         }
         &__keypad {
             background-color: $bg3_keypad;
-            .small {
+            &-key {
                 background-color: $keys3_default;
                 color: $text3_yellow;
+                box-shadow: 0px 3px 0px $keys3_defaultShadow;
             }
             .del, .reset {
                 background-color: $keys3_reset;
                 color: $text3_light;
+                box-shadow: 0px 3px 0px $keys3_resetShadow;
             }
             .equal {
                 background-color: $keys3_equal;
                 color: $text3_dark;
+                box-shadow: 0px 3px 0px $keys3_equalShadow;
             }
         }
     }

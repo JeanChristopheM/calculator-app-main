@@ -12,8 +12,8 @@ body {
     align-items: center;
 }
 .calc {
-    border:1px solid grey;
     padding:1em;
+    border-radius: .5rem;
 }
 .header {
     display:flex;
@@ -36,20 +36,27 @@ body {
         display:grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(5, 1fr);
-        gap: .5rem;
-        padding: 1rem;
+        gap: .7rem;
+        padding: .7rem;
         border-radius: 1rem;
         &-key {
             font-size: 32px;
             display: flex;
             justify-content: center;
             align-items: center;
+            &:active {
+                transform: translateY(2px);
+            }
         }
         .reset, .equal {
             grid-column: span 2;
         }
         .reset, .equal, .del{
             font-size: 16px;
+        }
+        button {
+            border: none;
+            border-radius: .5rem;
         }
     }
 }
