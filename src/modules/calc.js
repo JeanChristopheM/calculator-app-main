@@ -1,5 +1,4 @@
 let firstInstruction;
-let secondInstruction;
 let operator;
 
 const initialize = () => {
@@ -21,10 +20,16 @@ const keyPressed = (keyInput) => {
                 newValue = currentValue.slice(0,-1);
                 break;
             case "RESET":
+                firstInstruction = null;
+                operator = null;
                 newValue = 0;
                 break;
             case "=":
-                newValue = makeMath(parseFloat(firstInstruction), parseFloat(currentValue), operator);
+                if (firstInstruction) {
+                    if (firstInstruction == 0 && currentValue == 0) newValue = "0";
+                    else newValue = makeMath(parseFloat(firstInstruction), parseFloat(currentValue), operator);
+                }
+                else newValue = currentValue;
                 break;
             case ".":
                 if (!currentValue.includes('.')) newValue = currentValue.concat(keyInput.toString());
@@ -53,7 +58,7 @@ const makeMath = (origin, value, operator) => {
         case "x":
             result = origin * value;
     }
-    return result;
+    return result.toFixed(2);
 }
 
 const refreshScreen = (value) => {
@@ -62,4 +67,5 @@ const refreshScreen = (value) => {
     if (value === "") value = 0;
     return screen.textContent = value;
 }
-export { initialize, refreshScreen, keyPressed};
+
+export { initialize, keyPressed};
