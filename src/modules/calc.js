@@ -10,6 +10,7 @@ const initialize = () => {
 const keyPressed = (keyInput) => {
     let screen = document.querySelector('.main__screen');
     let currentValue = screen.textContent;
+    let newValue;
     if (typeof keyInput == "number") {
         if (currentValue === '0') {
             newValue = keyInput;
