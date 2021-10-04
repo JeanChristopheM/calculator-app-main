@@ -24,6 +24,17 @@ body {
         justify-content: space-between;
         align-items: center;
         @import 'range';
+        position: relative;
+        #switch_legend {
+            position:absolute;
+            top:-.5rem;
+            right:0;
+            width: 50%;
+            font-size: .5rem;
+            display:flex;
+            justify-content: space-between;
+            padding: 0 .5rem 0 .25rem;
+        }
     }
 }
 .main {
@@ -33,7 +44,7 @@ body {
         text-align: right;
         border:none;
         border-radius: 1rem;
-        margin-bottom: 1rem;
+        margin-block: 1rem;
     }
     &__keypad {
         display:grid;

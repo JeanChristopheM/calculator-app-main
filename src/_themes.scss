@@ -29,6 +29,20 @@
             }
         }
     }
+    input[type=range]::-webkit-slider-thumb {
+        background: $keys1_equal;
+        border: 3px solid $bg1_keypad;
+    }
+    input[type=range]::-moz-range-thumb {
+        background: $keys1_equal;
+        border: 3px solid $bg1_keypad;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+        background: $bg1_keypad;
+    }
+    input[type=range]::-moz-range-track {
+        background: $bg1_keypad;
+    }
 }
 .theme2 {
     background-color: $bg2_main;
@@ -61,6 +75,20 @@
             }
         }
     }
+    input[type=range]::-webkit-slider-thumb {
+        background: $keys2_equal;
+        border: 3px solid $bg2_keypad;
+    }
+    input[type=range]::-moz-range-thumb {
+        background: $keys2_equal;
+        border: 3px solid $bg2_keypad;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+        background: $bg2_keypad;
+    }
+    input[type=range]::-moz-range-track {
+        background: $bg2_keypad;
+    }
 }
 .theme3 {
     background-color: $bg3_main;
@@ -92,5 +120,19 @@
                 box-shadow: 0px 3px 0px $keys3_equalShadow;
             }
         }
+    }
+    input[type=range]::-webkit-slider-thumb {
+        background: $keys3_equal;
+        border: 3px solid $bg3_keypad;
+    }
+    input[type=range]::-moz-range-thumb {
+        background: $keys3_equal;
+        border: 3px solid $bg3_keypad;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+        background: $bg3_keypad;
+    }
+    input[type=range]::-moz-range-track {
+        background: $bg3_keypad;
     }
 }
