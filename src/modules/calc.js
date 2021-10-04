@@ -59,7 +59,7 @@ const makeMath = (origin, value, operator) => {
 const refreshScreen = (value) => {
     let screen = document.querySelector('.main__screen');
     
-    if (newValue === "") newValue = 0;
-    return screen.textContent = newValue;
+    if (value === "") value = 0;
+    return screen.textContent = value;
 }
 export { initialize, refreshScreen, keyPressed};
