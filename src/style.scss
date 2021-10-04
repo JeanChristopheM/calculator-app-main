@@ -10,10 +10,12 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 .calc {
     padding:1em;
     border-radius: .5rem;
+    max-width:350px;
 }
 .header {
     display:flex;
@@ -41,9 +43,11 @@ body {
     &__screen {
         width:100%;
         padding:1rem;
-        text-align: right;
+        text-align:right;
+        direction: rtl;
         border:none;
         border-radius: 1rem;
+        overflow: hidden;
         margin-block: 1rem;
     }
     &__keypad {
