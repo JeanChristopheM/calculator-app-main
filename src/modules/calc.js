@@ -58,7 +58,8 @@ const makeMath = (origin, value, operator) => {
         case "x":
             result = origin * value;
     }
-    return result.toFixed(2);
+    if (result % 1 !== 0) result = result.toFixed(2);
+    return result;
 }
 
 const refreshScreen = (value) => {
